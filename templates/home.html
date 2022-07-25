@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class='row'>
+        <div class='col-4'>
+        </div>
+        <div class='col-4 m-3'>
+            <div class="card text-center border border-3 border-success">
+                <div class="card-header">
+                    Your New Password
+                </div>
+                <div class="card-body">
+                <p class="card-text">{{ pw }}</p>
+                </div>
+            </div>
+        </div>
+        <div class='col-4'>
+        </div>
+    </div>  
+
+    <div class='row'>
+        <div class='col-4'>
+        </div>
+        <div class='col-4 border rounded border-3 border-primary m-3 p-3'>
+            <form class="needs-validation" id='form'>
+                <h3>Build Your Password...</h3>
+                <br />
+                <div class="mb-3">
+                    <label class='form-input-label' for='pw-length'>
+                        Password Length (between 8-128):
+                    </label>
+                    <input type="number" class="form-control" id="pw-length" min='8' max='128' required>
+                </div>
+                <div>
+                    <div>
+                        <h5>Select at least one...</h5>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="upper">
+                            <label class="form-check-label" for="upper">
+                            Uppercase Letters
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="lower">
+                            <label class="form-check-label" for="lower">
+                            Lowercase Letters
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="numb">
+                            <label class="form-check-label" for="numb">
+                            Numbers
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="spec">
+                            <label class="form-check-label" for="spec">
+                            Special Characters
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-grid gap-2 mt-2">
+                    <button type="submit" class="btn btn-outline-primary">Submit</button>
+                </div>
+            </form>
+        </div>
+        <div class='col-4'>
+        </div>
+    </div>
+    
+{% endblock  %}
