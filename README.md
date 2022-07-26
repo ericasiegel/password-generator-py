@@ -32,6 +32,7 @@ The user will use the form to generate a unique password. They will select the l
 
 ## Roadmap
 - Add a copy to clipboard button
+- Fix css for mobile use
 
 ## Technologies & Languages
 - [Python](https://www.python.org/)
