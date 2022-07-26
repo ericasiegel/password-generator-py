@@ -7,32 +7,37 @@ upper_letters = string.ascii_uppercase
 numbers = string.digits
 special_char = string.punctuation
 
-def get_password(length = 0, upper = True, lower = True, numb = True, spec = True):
+
+def get_password(**kwargs):
     '''
     
     '''
+    length = kwargs['length']
+    print(length)
+    choices = kwargs['choices']
+    print(choices)
+    
     # set an empty password string
     pw = '' 
     
     # check to see if uppercase letters was selected
-    if upper: 
+    if 'upper' in choices: 
         pw += upper_letters
     
     # check to see if lowercase letters was selected
-    if lower:
+    if 'lower' in choices:
         pw += lower_letters
     
     # check to see if numbers were selected
-    if numb:
+    if 'numb' in choices:
         pw += numbers
     
     # check to see if special characters were selected
-    if spec:
+    if 'spec' in choices:
         pw += special_char
     
     # take the new password then randomize the choices, and join them, with the selected length
     pw = ''.join(random.choices(pw, k=length))
-    # print(pw)
+    print(pw)
     return pw
 
-get_password()
