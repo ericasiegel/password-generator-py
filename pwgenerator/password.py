@@ -13,9 +13,9 @@ def get_password(**kwargs):
     
     '''
     length = kwargs['length']
-    print(length)
+    # print(length)
     choices = kwargs['choices']
-    print(choices)
+    # print(choices)
     
     # set an empty password string
     pw = '' 
@@ -38,6 +38,6 @@ def get_password(**kwargs):
     
     # take the new password then randomize the choices, and join them, with the selected length
     pw = ''.join(random.choices(pw, k=length))
-    print(pw)
+    # print(pw)
     return pw
 

@@ -20,11 +20,12 @@ I want to re-create the programs and apps I made during my time with the UCLA Ex
 - [Screenshots](#screenshots)
 
 ## Description
-This Password Generator uses django and python to create a unique password based off specifications made by the user.
+This Password Generator uses Django and Python to create a unique password based off specifications made by the user.
 
 ## Links
 [Python Password Generator Deployed Page]()
-[Python Password Generator GitHub]()
+
+[Python Password Generator GitHub](https://github.com/ericasiegel/password-generator-py.git)
 
 ## Usage
 The user will use the form to generate a unique password. They will select the length of the password (between 8 and 128 characters), and then select if they want it to contain uppercase or lowercase letters, numbers, and/or special characters. When the form is submitted, their unique password would be displayed at the top.
